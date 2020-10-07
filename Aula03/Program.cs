@@ -10,6 +10,14 @@ namespace Aula03
     {
         static void Main(string[] args)
         {
+            Funcionario f1 = new Funcionario();
+            f1.Email = "luana@gmailcom";
+            f1.SetNome("Luana"); //set --> setter
+            f1.Sobrenome = "Fernandes"; // método setter
+
+            Console.WriteLine("Email do Funcionario: " + f1.Email);
+            Console.WriteLine("Nome do Funcionario: " + f1.GetNome()); //get --> getter
+            Console.WriteLine("Sobrenome do Funcionario: " + f1.Sobrenome); //método getter
         }
     }
 }
